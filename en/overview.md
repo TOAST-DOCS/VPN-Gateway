@@ -13,7 +13,7 @@ This service provides the capability to establish an encrypted network connectio
 * Enables an encrypted network connection between a VPC and a customer’s on-premises network.
 * The bandwidth (guaranteed on an outbound basis) can be selected among 20M, 50M, 100M, and 1G.
 * The encryption algorithm can be selected among AES, DES, and 3DES.
-* The integrity algorithm can be selected among MD5 and SHA1.
+* The integrity algorithm can be selected among MD5, SHA1 and SHA256.
 * Network ACLs can be applied.
 * This service is currently only available in the Korea (Pyeongchon) region, and will be supported by other regions gradually.
 
