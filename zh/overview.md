@@ -2,12 +2,16 @@
 
 This service provides the capability to establish an encrypted network connection between a VPC and a customer's on-premises network.
 
+
+<a id="1"></a>
 ## Concepts
 
 * Local gateway: A resource allocated to VPN tunnel configuration in NHN Cloud.
 * Remote gateway: A resource allocated to VPN tunnel configuration on the on-premises side.
 * VPN tunnel: An encrypted link that is configured between a remote gateway and a local gateway.
 
+
+<a id="2"></a>
 ## Main Features
 
 * Enables an encrypted network connection between a VPC and a customer’s on-premises network.
@@ -17,6 +21,8 @@ This service provides the capability to establish an encrypted network connectio
 * Network ACLs can be applied.
 * This service is currently only available in the Korea (Pangyo) and Korea (Pyeongchon) regions, and will be supported by other regions gradually.
 
+
+<a id="3"></a>
 ## Restrictions
 
 * IPv6 traffic is not supported for VPN connections. Only IPv4 traffic is supported.

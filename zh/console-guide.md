@@ -2,6 +2,8 @@
 
 This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from the console.
 
+
+<a id="1"></a>
 ## Create a VPN Gateway
 
 * Name: Enter the name of the VPN gateway to be created.
@@ -11,15 +13,21 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * The network interface information of the created VPN gateway can also be found in the Network Interface menu.
 * You can create one VPN gateway for each VPC.
 
+
+<a id="2"></a>
 ## Modify a VPN Gateway
 
 * You can modify the name and description.
 
+
+<a id="3"></a>
 ## Delete a VPN Gateway
 
 * You can delete the selected gateway.
 * To delete a gateway, there must be no attached VPN connections.
 
+
+<a id="4"></a>
 ## Create a VPN Connection
 
 * You can create a VPN connection by selecting the tunnel options.
@@ -34,6 +42,8 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * The local range cannot be used in duplicate within the same VPC.
 * The peer range can be used in duplicate in different VPCs.
 
+
+<a id="5"></a>
 ### VPN Tunnel Options
 
 * Local Range: IPv4 CIDR range on the NHN Cloud side that is allowed for communication through VPN tunnel
@@ -59,10 +69,14 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
     * You can use English letters, numbers, and special characters.
     * Use a value between 8 and 32 bytes.
 
+
+<a id="6"></a>
 ## Modify a VPN Connection
 
 * You can modify the name and description.
 
+
+<a id="7"></a>
 ## Delete a VPN Connection
 
 * You can delete the selected VPN connection.
