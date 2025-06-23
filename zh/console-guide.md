@@ -51,13 +51,13 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * Peer Range: IPv4 CIDR range on the customer gateway (on-premises) side that is allowed for communication through VPN tunnel.
 * Peer Gateway Address: Public IP address of the customer-side gateway
 * IKE1 Encryption/Integrity Algorithms: Encryption and integrity algorithms allowed for the VPN tunnel for phase 1 IKE negotiation
-    * (Choose one among aes192, aes256, des, 3des)-(Choose one among md5, sha1, sha256)
+    * (Choose one among aes192, aes256)-(Choose one among md5, sha1, sha256)
 * IKE1 Authentication Lifetime: Lifetime of phase 1 IKE negotiation (in seconds).
     * You can specify a number between 900 and 28,800.
 * Phase 1 Diffie-Hellman (DH) Group: DH group number allowed for the VPN tunnel in the phase 1 of IKE negotiation.
     * Choose one among 1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28
 * IKE2 Encryption/Integrity Algorithms: Encryption and integrity algorithms allowed for the VPN tunnel for phase 2 IKE negotiation
-    * (Choose one among aes192, aes256, des, 3des)-(Choose one among md5, sha1, sha256)
+    * (Choose one among aes192, aes256)-(Choose one among md5, sha1, sha256)
 * IKE2 Authentication Lifetime: Lifetime of phase 2 IKE negotiation (in seconds).
     * You can specify a number between 900 and 28,800.
 * IKE2 Diffie-Hellman (DH) Group: DH group number allowed for the VPN tunnel in the phase 2 of IKE negotiation.
