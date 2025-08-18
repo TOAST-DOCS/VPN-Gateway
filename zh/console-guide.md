@@ -2,6 +2,8 @@
 
 This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from the console.
 
+
+<a id="1"></a>
 ## Create a VPN Gateway
 
 * Name: Enter the name of the VPN gateway to be created.
@@ -11,15 +13,21 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * The network interface information of the created VPN gateway can also be found in the Network Interface menu.
 * You can create one VPN gateway for each VPC.
 
+
+<a id="2"></a>
 ## Modify a VPN Gateway
 
 * You can modify the name and description.
 
+
+<a id="3"></a>
 ## Delete a VPN Gateway
 
 * You can delete the selected gateway.
 * To delete a gateway, there must be no attached VPN connections.
 
+
+<a id="4"></a>
 ## Create a VPN Connection
 
 * You can create a VPN connection by selecting the tunnel options.
@@ -34,6 +42,8 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * The local range cannot be used in duplicate within the same VPC.
 * The peer range can be used in duplicate in different VPCs.
 
+
+<a id="5"></a>
 ### VPN Tunnel Options
 
 * Local Range: IPv4 CIDR range on the NHN Cloud side that is allowed for communication through VPN tunnel
@@ -41,13 +51,13 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * Peer Range: IPv4 CIDR range on the customer gateway (on-premises) side that is allowed for communication through VPN tunnel.
 * Peer Gateway Address: Public IP address of the customer-side gateway
 * IKE1 Encryption/Integrity Algorithms: Encryption and integrity algorithms allowed for the VPN tunnel for phase 1 IKE negotiation
-    * (Choose one among aes192, aes256, des, 3des)-(Choose one among md5, sha1, sha256)
+    * (Choose one among aes192, aes256)-(Choose one among md5, sha1, sha256)
 * IKE1 Authentication Lifetime: Lifetime of phase 1 IKE negotiation (in seconds).
     * You can specify a number between 900 and 28,800.
 * Phase 1 Diffie-Hellman (DH) Group: DH group number allowed for the VPN tunnel in the phase 1 of IKE negotiation.
     * Choose one among 1, 2, 5, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28
 * IKE2 Encryption/Integrity Algorithms: Encryption and integrity algorithms allowed for the VPN tunnel for phase 2 IKE negotiation
-    * (Choose one among aes192, aes256, des, 3des)-(Choose one among md5, sha1, sha256)
+    * (Choose one among aes192, aes256)-(Choose one among md5, sha1, sha256)
 * IKE2 Authentication Lifetime: Lifetime of phase 2 IKE negotiation (in seconds).
     * You can specify a number between 900 and 28,800.
 * IKE2 Diffie-Hellman (DH) Group: DH group number allowed for the VPN tunnel in the phase 2 of IKE negotiation.
@@ -59,10 +69,14 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
     * You can use English letters, numbers, and special characters.
     * Use a value between 8 and 32 bytes.
 
+
+<a id="6"></a>
 ## Modify a VPN Connection
 
 * You can modify the name and description.
 
+
+<a id="7"></a>
 ## Delete a VPN Connection
 
 * You can delete the selected VPN connection.
