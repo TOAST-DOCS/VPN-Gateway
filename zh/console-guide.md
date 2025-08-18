@@ -30,22 +30,34 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 <a id="4"></a>
 ## Create a VPN Connection
 
+### Common
 * You can create a VPN connection by selecting the tunnel options.
 * It may take a few minutes to complete the creation of the VPN connection.
 * When the creation is completed, the status indicator changes to `ACTIVE`.
 * If there are VPN connections pending for deletion or creation, the tasks must be completed before any other VPN connections can be created.
 * The range used for the VPN connection must not overlap in local and remote networks. It must not overlap with the subnet' range as well as the VPC's range.
+* The local range used for the VPN connection must be /29 or less, and since we use the four addresses of each range internally, the addresses cannot be used. For example, if you use /29, the following four addresses are unavailable: x.x.x.4, x.x.x.5, x.x.x.6, and x.x.x.7. From /30, you cannot use it as the address itself that must be allocated by the internal system is insufficient.
 * In the Routing menu, you must create a route so that the peer range is routed to the VPN gateway.
 * Each VPN gateway can have a maximum of 10 VPN connections.
 * When connecting your VPC to an on-premises network, you must use address ranges with no overlapping network addresses.
+* Peer range can be used redundantly in other VPCs.
+
+### v1
 * For the peer gateway address, you cannot use the same address in duplicate.
 * The local range cannot be used in duplicate within the same VPC.
-* The peer range can be used in duplicate in different VPCs.
+* If a VPN connection pending for deletion or creation is not completed, please contact the Customer Center.
+* The remote ranges are fixed on the same VPN Gateway, and only multiple local ranges can be added.
+* Since the local gateway address is not displayed on the console, you must connect the connection from the local side to the remote side.
+
+### v2
+* A user arbitrarily can delete the VPN connection pending deletion or creation. At this time, even if it is deleted from the console, it takes time for the actual deletion. And if you try to create a new VPN connection immediately, it may fail. Please wait a few minutes before trying to create a new VPN connection.
+* N:N connections are possible even in the same VPN Gateway between multiple local ranges and multiple remote ranges (all ranges in all connections must not overlap with each other).
+* Local gateway addresses are displayed on the console, and you can connect from local to remote or remote to local without any direction restrictions.
+* Between Korea (Pyeongchon) region and Korea (Pangyo) region, you can also use a VPN to connect (peer gateway devices in each region must be selected from Fortinet).
 
 
 <a id="5"></a>
 ### VPN Tunnel Options
-
 * Local Range: IPv4 CIDR range on the NHN Cloud side that is allowed for communication through VPN tunnel
     * The range of the selected subnet is entered.
 * Peer Range: IPv4 CIDR range on the customer gateway (on-premises) side that is allowed for communication through VPN tunnel.
@@ -79,5 +91,11 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 <a id="7"></a>
 ## Delete a VPN Connection
 
+### Common
 * You can delete the selected VPN connection.
+
+### v1
 * If there are VPN connections pending for deletion or creation, the tasks must be completed before any other VPN connections can be deleted.
+
+### v2
+* If there are VPN connections pending for deletion or creation, you can complete the task or delete another VPN connection after the deletion.
