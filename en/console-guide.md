@@ -91,7 +91,7 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 <a id="7"></a>
 ## Delete a VPN Connection
 
-### 공통
+### Common
 * You can delete the selected VPN connection.
 
 ### v1
