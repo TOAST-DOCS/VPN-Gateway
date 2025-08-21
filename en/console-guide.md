@@ -37,7 +37,7 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * If there are VPN connections pending for deletion or creation, the tasks must be completed before any other VPN connections can be created.
 * The range used for the VPN connection must not overlap in local and remote networks. It must not overlap with the subnet' range as well as the VPC's range.
 * The local range used for the VPN connection must be /29 or less, and since we use the four addresses of each range internally, the addresses cannot be used. For example, if you use /29, the following four addresses are unavailable: x.x.x.4, x.x.x.5, x.x.x.6, and x.x.x.7. From /30, you cannot use it as the address itself that must be allocated by the internal system is insufficient.
-* The IP addresses assigned to the VPN Gateway must not include the last four addresses of the subnet.
+* The IP allocated to the VPN Gateway cannot include the last four addresses of the subnet.
 * In the Routing menu, you must create a route so that the peer range is routed to the VPN gateway.
 * Each VPN gateway can have a maximum of 10 VPN connections.
 * When connecting your VPC to an on-premises network, you must use address ranges with no overlapping network addresses.
