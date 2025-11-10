@@ -55,6 +55,7 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * N:N connections are possible even in the same VPN Gateway between multiple local ranges and multiple remote ranges (all ranges in all connections must not overlap with each other).
 * Local gateway addresses are displayed on the console, and you can connect from local to remote or remote to local without any direction restrictions.
 * Between Korea (Pyeongchon) region and Korea (Pangyo) region, you can also use a VPN to connect (peer gateway devices in each region must be selected from Fortinet).
+* By connecting a VPC from another project through Transit Hub and adding a VPN connection to the bandwidth of the connected VPC, VPN communication is possible through the VPC where the VPN Gateway is created in the VPC from the other project.  
 
 
 <a id="5"></a>
