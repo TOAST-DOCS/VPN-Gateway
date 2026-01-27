@@ -19,7 +19,7 @@ This service provides the capability to establish an encrypted network connectio
 * The encryption algorithm can be selected among AES192 and AES256.
 * The integrity algorithm can be selected among MD5, SHA1 and SHA256.
 * Network ACLs can be applied.
-* This service is currently only available in the Korea (Pangyo) and Korea (Pyeongchon) regions, and will be supported by other regions gradually.
+* This service is currently available only in the Korea (Pangyo, Pyeongchon, and Gwangju) regions and will be supported by other regions gradually.
 
 
 <a id="3"></a>
