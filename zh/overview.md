@@ -19,7 +19,7 @@ This service provides the capability to establish an encrypted network connectio
 * The encryption algorithm can be selected among AES192 and AES256.
 * The integrity algorithm can be selected among MD5, SHA1 and SHA256.
 * Network ACLs can be applied.
-* This service is currently only available in the Korea (Pangyo) and Korea (Pyeongchon) regions, and will be supported by other regions gradually.
+* This service is currently available only in the Korea (Pangyo, Pyeongchon, and Gwangju) regions and will be supported by other regions gradually.
 
 
 <a id="3"></a>
@@ -31,9 +31,5 @@ This service provides the capability to establish an encrypted network connectio
 * You can create one VPN gateway for each VPC.
 * Each VPN gateway can have a maximum of 10 connections.
 * In a VPC connected with VPN, it is not supported to access other networks using peering or access other networks or services through other gateways.
-
-### v1
-* You can create a VPN Gateway per VPC and set the bandwidth to use. Every VPN connection belonging to a single VPN Gateway uses the same bandwidth. For example, if you create the first VPN connection at 20Mbps, every VPN connection you create in the VPC will use 20Mbps of bandwidth. If you want to use a different bandwidth, you can create it by specifying the bandwidth you want (choose from 20M, 50M, 100M, and 1G) when creating the first VPN connection in another VPC.
-
-### v2 
-* You can create a VPN Gateway per VPC and set the bandwidth to use. Every VPN connection belonging to a single VPN Gateway shares the bandwidth set on the VPN Gateway.
+* By connecting a Transit Hub to a VPC that is already connected via VPN, other projects can also communicate with the on-premises network over VPN.
+* Each VPC has its own VPN Gateway, where the bandwidth can be specified. All VPN connections attached to the same VPN Gateway share the configured bandwidth.
