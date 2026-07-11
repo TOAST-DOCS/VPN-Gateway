@@ -1,10 +1,13 @@
-## Network > VPN Gateway (Site-to-Site VPN) > Console User Guide
+<!-- pre-align:aligned sig=0e4089b123b1 -->
+
+<a id="network-vpn-gateway-site-to-site-vpn-console-user-guide"></a>
+## Network > VPN Gateway (Site-to-Site VPN) > Console User Guide { #network-vpn-gateway-site-to-site-vpn-console-user-guide }
 
 This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from the console.
 
 
 <a id="1"></a>
-## Create a VPN Gateway
+## Create a VPN Gateway { #1 }
 
 * Name: Enter the name of the VPN gateway to be created.
 * VPC: Select the VPC in which to create the VPN gateway.
@@ -15,22 +18,22 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 
 
 <a id="2"></a>
-## Modify a VPN Gateway
+## Modify a VPN Gateway { #2 }
 
 * You can modify the name and description.
 
 
 <a id="3"></a>
-## Delete a VPN Gateway
+## Delete a VPN Gateway { #3 }
 
 * You can delete the selected gateway.
 * To delete a gateway, there must be no attached VPN connections.
 
 
 <a id="4"></a>
-## Create a VPN Connection
+## Create a VPN Connection { #4 }
 
-### Common
+**Common**
 * You can create a VPN connection by selecting the tunnel options.
 * It may take a few minutes to complete the creation of the VPN connection.
 * When the creation is completed, the status indicator changes to `ACTIVE`.
@@ -49,7 +52,7 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 * By connecting a VPC from another project through Transit Hub and adding a VPN connection to the bandwidth of the connected VPC, VPN communication is possible through the VPC where the VPN Gateway is created in the VPC from the other project.  
 
 <a id="5"></a>
-### VPN Tunnel Options
+### VPN Tunnel Options { #5 }
 * Local Range: IPv4 CIDR range on the NHN Cloud side that is allowed for communication through VPN tunnel
     * The range of the selected subnet is entered.
 * Peer Range: IPv4 CIDR range on the customer gateway (on-premises) side that is allowed for communication through VPN tunnel.
@@ -75,19 +78,19 @@ This guide describes how to use the VPN Gateway (Site-to-Site VPN) service from 
 
 
 <a id="6"></a>
-## Modify a VPN Connection
+## Modify a VPN Connection { #6 }
 
 * You can modify the name and description.
 
 
 <a id="7"></a>
-## Delete a VPN Connection
+## Delete a VPN Connection { #7 }
 
-### Common
+**Common**
 * You can delete the selected VPN connection.
 
-### v1
+**v1**
 * If there are VPN connections pending for deletion or creation, the tasks must be completed before any other VPN connections can be deleted.
 
-### v2
+**v2**
 * If there are VPN connections pending for deletion or creation, you can complete the task or delete another VPN connection after the deletion.
