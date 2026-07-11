@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=235e2adb8d9f -->
+
 <a id="network-vpn-gateway-site-to-site-vpn-overview"></a>
 ## Network > VPN Gateway (Site-to-Site VPN) > Overview { #network-vpn-gateway-site-to-site-vpn-overview }
 
@@ -26,8 +28,7 @@ This service provides the capability to establish an encrypted network connectio
 <a id="3"></a>
 ## Restrictions { #3 }
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart subheading exists under 제한 사항; ko source has no equivalent 'Common' subsection) -->
-### Common
+**Common**
 * IPv6 traffic is not supported for VPN connections. Only IPv4 traffic is supported.
 * When connecting your VPC to an on-premises network, you must use address ranges with no overlapping network addresses.
 * You can create one VPN gateway for each VPC.
