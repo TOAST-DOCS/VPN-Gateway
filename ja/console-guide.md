@@ -1,10 +1,11 @@
-## Network > VPN Gateway(Site-to-Site VPN) > コンソール使用ガイド
+<a id="network-vpn-gateway-site-to-site-vpn-console-user-guide"></a>
+## Network > VPN Gateway(Site-to-Site VPN) > コンソール使用ガイド { #network-vpn-gateway-site-to-site-vpn-console-user-guide }
 
 コンソールでVPN Gateway(Site-to-Site VPN)サービスを使用する方法を説明します。
 
 
 <a id="1"></a>
-## VPN Gateway作成
+## VPN Gateway作成 { #1 }
 
 * 名前：作成するVPN Gatewayの名前を入力します。
 * VPC：VPN Gatewayを作成するVPCを選択します。
@@ -15,21 +16,22 @@
 
 
 <a id="2"></a>
-## VPN Gateway変更
+## VPN Gateway変更 { #2 }
 
 * 名前と説明を変更できます。
 
 
 <a id="3"></a>
-## VPN Gateway削除
+## VPN Gateway削除 { #3 }
 
 * 選択したGatewayを削除できます。
 * 削除するには接続されたVPN接続があってはいけません。
 
 
 <a id="4"></a>
-## VPN接続の作成
+## VPN接続の作成 { #4 }
 
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: '共通' subheading under VPN接続の作成 does not exist in ko outline) -->
 ### 共通
 * トンネルオプションを選択してVPN接続を作成できます。
 * VPN接続の作成完了まで数分かかることがあります。
@@ -50,7 +52,7 @@
 
 
 <a id="5"></a>
-### VPNトンネルオプション
+### VPNトンネルオプション { #5 }
 
 * ローカル帯域：VPNトンネルを介した通信が許可されているNHN Cloud側のIPv4 CIDR範囲
     * 選択したSubnetの帯域が入ります。
@@ -77,19 +79,22 @@
 
 
 <a id="6"></a>
-## VPN接続の変更
+## VPN接続の変更 { #6 }
 
 * 名前と説明を変更できます。
 
 
 <a id="7"></a>
-## VPN接続の削除
+## VPN接続の削除 { #7 }
 
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: '共通' subheading under VPN接続の削除 does not exist in ko outline) -->
 ### 共通
 * 選択したVPN接続を削除できます。
 
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'v1' subheading under VPN接続の削除 does not exist in ko outline) -->
 ### v1
 * 削除待機中または作成待機中のVPN接続がある場合は、その作業が完了した後に別のVPN接続を削除できます。
 
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'v2' subheading under VPN接続の削除 does not exist in ko outline) -->
 ### v2
 * 削除待ちまたは作成待ちのVPN接続がある場合、その処理が完了するか、あるいはその接続を削除した後に、別のVPN接続を削除できます。
