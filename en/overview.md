@@ -1,10 +1,13 @@
-## Network > VPN Gateway (Site-to-Site VPN) > Overview
+<!-- pre-align:aligned sig=235e2adb8d9f -->
+
+<a id="network-vpn-gateway-site-to-site-vpn-overview"></a>
+## Network > VPN Gateway (Site-to-Site VPN) > Overview { #network-vpn-gateway-site-to-site-vpn-overview }
 
 This service provides the capability to establish an encrypted network connection between a VPC and a customer's on-premises network.
 
 
 <a id="1"></a>
-## Concepts
+## Concepts { #1 }
 
 * Local gateway: A resource allocated to VPN tunnel configuration in NHN Cloud.
 * Remote gateway: A resource allocated to VPN tunnel configuration on the on-premises side.
@@ -12,7 +15,7 @@ This service provides the capability to establish an encrypted network connectio
 
 
 <a id="2"></a>
-## Main Features
+## Main Features { #2 }
 
 * Enables an encrypted network connection between a VPC and a customer’s on-premises network.
 * The bandwidth (guaranteed on an outbound basis) can be selected among 20M, 50M, 100M, and 1G.
@@ -23,9 +26,9 @@ This service provides the capability to establish an encrypted network connectio
 
 
 <a id="3"></a>
-## Restrictions
+## Restrictions { #3 }
 
-### Common
+**Common**
 * IPv6 traffic is not supported for VPN connections. Only IPv4 traffic is supported.
 * When connecting your VPC to an on-premises network, you must use address ranges with no overlapping network addresses.
 * You can create one VPN gateway for each VPC.

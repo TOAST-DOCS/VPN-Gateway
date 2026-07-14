@@ -1,10 +1,13 @@
-## Network > VPN Gateway(Site-to-Site VPN) > 콘솔 사용 가이드
+<!-- pre-align:aligned sig=0e4089b123b1 -->
+
+<a id="network-vpn-gateway-site-to-site-vpn-console-user-guide"></a>
+## Network > VPN Gateway(Site-to-Site VPN) > 콘솔 사용 가이드 { #network-vpn-gateway-site-to-site-vpn-console-user-guide }
 
 콘솔에서 VPN Gateway(Site-to-Site VPN) 서비스를 사용하는 방법을 설명합니다.
 
 
 <a id="1"></a>
-## VPN Gateway 생성
+## VPN Gateway 생성 { #1 }
 
 * 이름: 생성할 VPN Gateway의 이름을 입력합니다.
 * VPC: VPN Gateway를 만들 VPC를 선택합니다.
@@ -15,20 +18,20 @@
 
 
 <a id="2"></a>
-## VPN Gateway 변경
+## VPN Gateway 변경 { #2 }
 
 * 이름과 설명을 변경할 수 있습니다.
 
 
 <a id="3"></a>
-## VPN Gateway 삭제
+## VPN Gateway 삭제 { #3 }
 
 * 선택한 Gateway를 삭제할 수 있습니다.
 * 삭제하려면 연결된 VPN 연결이 없어야 합니다.
 
 
 <a id="4"></a>
-## VPN 연결 생성
+## VPN 연결 생성 { #4 }
 
 * 터널 옵션을 선택하여 VPN 연결을 생성할 수 있습니다.
 * VPN 연결 생성 완료까지 몇 분 정도 걸릴 수 있습니다.
@@ -49,7 +52,7 @@
 
 
 <a id="5"></a>
-### VPN 터널 옵션
+### VPN 터널 옵션 { #5 }
 * 로컬 대역: VPN 터널을 통한 통신이 허용된 NHN Cloud 측 IPv4 CIDR 범위
     * 선택한 Subnet의 대역이 들어갑니다.
 * 피어 대역: VPN 터널을 통한 통신이 허용된 고객 게이트웨이(온프레미스) 측 IPv4 CIDR 범위
@@ -75,13 +78,13 @@
 
 
 <a id="6"></a>
-## VPN 연결 변경
+## VPN 연결 변경 { #6 }
 
 * 이름과 설명을 변경할 수 있습니다.
 
 
 <a id="7"></a>
-## VPN 연결 삭제
+## VPN 연결 삭제 { #7 }
 
 * 선택한 VPN 연결을 삭제할 수 있습니다.
 * 삭제 대기 중이거나 생성 대기 중인 VPN 연결이 있으면 해당 작업을 완료하거나 또는 삭제 후 다른 VPN 연결을 삭제할 수 있습니다.
