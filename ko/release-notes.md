@@ -1,3 +1,5 @@
+<!-- pre-align:aligned sig=e5874fb903db -->
+
 ## Network > VPN Gateway(Site-to-Site VPN) > 릴리스 노트
 
 ### 2025. 11. 25.
