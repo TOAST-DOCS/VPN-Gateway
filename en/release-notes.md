@@ -1,5 +1,7 @@
 <!-- machine_translated: true -->
 
+<!-- pre-align:aligned sig=e5874fb903db -->
+
 ## Network > VPN Gateway(Site-to-Site VPN) > Release Notes
 
 ### November 25, 2025
